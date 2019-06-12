@@ -8,50 +8,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
         href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.scss">
-
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 </head>
 
 <body>
     <div class="main">
-        <div class="navigation">
+        <nav class="navigation">
             <div class="logo">
                 <h1>lucky<span>dash</span></h1>
+                <div class="nav-toggle">
+                    <!-- [THE HAMBURGER] -->
+                    <a class="hamburger" onclick="activateMenu()">&#9776;</a>
+                </div>
             </div>
-            <nav class="menu">
-                <div class="menu-item active">
-                    <a href="#">
+            <ul class="menu" id="menu">
+                <a href="">
+                    <li>
                         <i class="fa fa-line-chart fa-2x"></i>
                         Home
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="#">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
                         <i class="fa fa-user fa-2x"></i>
                         Clients
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="#">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
                         <i class="fa fa-file-o fa-2x"></i>
                         Invoice
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="#">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
                         <i class="fa fa-eur fa-2x"></i>
                         Cash
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="#">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
                         <i class="fa fa-suitcase fa-2x"></i>
                         Expense
-                    </a>
-                </div>
-
-            </nav>
-        </div>
+                    </li>
+                </a>
+            </ul>
+        </nav>
         <div class="aside">
             <div class="top-nav">
                 <div class="search">
@@ -71,7 +74,17 @@
             </div>
         </div>
     </div>
-    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        menu = document.querySelector('#menu');
+        function activateMenu() {
+            if (menu.className === "menu") {
+                menu.className += " menu-responsive";
+            } else {
+                menu.className = "menu";
+            }
+        }
+    </script>
 </body>
 
 </html>
