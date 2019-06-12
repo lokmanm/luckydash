@@ -1,4 +1,4 @@
-
+![Dashboard](https://user-images.githubusercontent.com/11158157/59389042-acb4ea00-8d6d-11e9-8ef6-bdd3da36e18c.jpg)
 
 # Lucky Dash
 
