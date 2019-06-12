@@ -6,7 +6,11 @@ Simple css dashboard that goes with every framework/project.
 
 ## Getting Started
 
-In order to use the dashboard, simply clone the project to your local machine. 
+In order to use the dashboard, simply clone the project to your local machine.
+
+## Making Changes
+
+Under the css folder you have the main file style.css where you can edit the colors at the :root.
 
 ## Acknowledgments
 
